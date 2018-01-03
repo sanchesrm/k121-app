@@ -1,0 +1,1 @@
+angular.module('angularApp').constant('rest_url', 'https://k121-api-sanchesrm.herokuapp.com/api');

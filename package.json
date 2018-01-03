@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "description": "K121 Frontend Remoto Teste",
+  "author": "Rodrigo Martins Sanches",
+  "scripts": {
+    "start": "node server.js",
+    "test": "protractor tests/config.js"
+  },
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-animate": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "angular-underscore": "0.0.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "chalk": "*",
+    "cross-spawn": "*",
+    "express": "^4.16.2",
+    "fs-extra": "*",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.1.2",
+    "path": "*",
+    "path-exists": "*",
+    "protractor": "^5.2.2"
+  }
+}

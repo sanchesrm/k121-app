@@ -1,0 +1,33 @@
+<div class="container add-participante-content">
+	<h2>Cadastrar novo participante</h2>
+
+	<form name="form">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="alert alert-danger" role="alert" ng-show="erroAdd">Ocorreu um erro na operação</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Nome</p>
+			</div>
+			<div class="col-md-6">
+				<p>E-mail</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<input type="text" class="form-control" placeholder="Digite o nome do participante" ng-model="participante.nome" ng-class="{ 'has-error': form.email.$error.required}" required />
+			</div>
+			<div class="col-md-6">
+				<input type="email" name="email" class="form-control" placeholder="Digite o E-mail" ng-model="participante.email" ng-class="{ 'has-error': form.email.$invalid || form.email.$error.required}" required />
+			</div>
+		</div>
+		<div class="row div-buttons pull-right">
+			<div class="col-md-12">
+				<a class="btn btn-default" href="/amigoSecreto">Voltar</a>
+				<button class="btn btn-success" ng-disabled="form.$invalid || form.$pristine" ng-click="addParticipante()">Salvar</button>
+			</div>
+		<div>
+	</form>
+</div>

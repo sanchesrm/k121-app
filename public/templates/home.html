@@ -1,0 +1,47 @@
+<div class="container listagem-content">
+
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading clearfix">
+			<h1 class="panel-title pull-left">
+				Listagem de amigos para serem sorteados
+            </h1>
+
+			<button type="button" class="btn btn-success sortearButton pull-right" ng-click="sortear()" data-ng-disabled="checkIfSortear()">Sortear</button>
+		</div>
+
+		<div class="alert alert-warning" role="alert" ng-show="sorteando">Aguarde um momento, vamos sortear o amigo secreto</div>
+		<div class="alert alert-info" role="alert" ng-show="loadingEmail">Olha que legal, já sorteamos os pares. Agora vamos enviar os e-mails</div>
+		<div class="alert alert-success" role="alert" ng-show="emailEnviado">E-mails enviados, agora é só comprar o presente</div>
+		<div class="alert alert-danger" role="alert" ng-show="emailFalhou">Parece que teve uma falha no e-mail. 
+			<a href="" class="alert-link" ng-click="sortear()">Clique aqui para tentar enviar novamente</a>
+		</div>
+		<!-- Table -->
+		<table class="table table-striped participanteTable">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>Amigo</th>
+					<th>Editar</th>
+					<th>Deletar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="participante in participantesList">
+					<td>{{participante.nome}}</td>
+					<td>{{participante.email}}</td>
+					<td>{{getNomeAmigo(participante.amigo)}}</td>
+					<td>
+						<a href="/novoParticipante/{{participante._id}}" class="editGlyphicon">
+							<span class="glyphicon glyphicon-pencil" aria-hidden="true" ng-click="editParticipante(participante._id)"></span>
+						</a>
+					</td>
+					<td>
+						<span class="glyphicon glyphicon-remove" aria-hidden="true" ng-click="deleteParticipante(participante._id)" ng-confirm-click="Tem certeza que deseja deletar o participante?"></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<div>

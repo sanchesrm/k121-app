@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularApp">
+  <head>
+      <base href="/">
+      <meta charset="UTF-8">
+      <title>K121 KENOBY</title>
+      <link rel="icon" type="image/png" href="http://www.kenoby.com/wp-content/themes/kenoby/assets/img/favicon.png"/>
+      <link href="build/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/amigoSecreto">K121 KENOBY</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/novoParticipante">Adicionar Novo</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ui-view class="main-body"></ui-view>
+
+    <script src="build/app.min.js"></script>
+  </body>
+</html>

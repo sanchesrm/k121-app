@@ -1,0 +1,101 @@
+.navbar.navbar-default {
+	padding: 0 30rem 0 30rem;
+	.navbar-brand,  
+	.navbar-nav > li > a{
+		color: #fff;
+	}
+	.navbar-brand:hover,
+	.navbar-nav > li:hover {
+		background-color: #004675;
+		color: #fff;
+		a:hover {
+			color: #fff;
+		}
+	}
+
+	.navbar-brand:focus,
+	.navbar-nav > li {
+		color: #fff;
+		a:focus {
+			color: #fff;
+		}	
+	}
+	background-color: rgba(0, 87, 155, 0.9);
+}
+
+.main-body {
+	padding: 0 30rem 0 30rem;
+
+	.listagem-content {
+		.panel.panel-default {
+			margin-top: 5px;
+			
+			.sortearButton {
+				float: right;
+				width: 15rem;
+				height: 40px;
+				font-size: 20px;
+				font-weight: bold;
+				outline: none;
+				border: none;
+			}
+
+			.panel-heading .panel-title {
+				line-height: 40px;
+				vertical-align: center;
+			}
+		}
+	}
+
+	.participanteTable tr > *:nth-child(1) { width:30%; }
+    .participanteTable tr > *:nth-child(2) { width:30%; }
+    .participanteTable tr > *:nth-child(3) { width:30%; }
+    .participanteTable tr > *:nth-child(4) { width:5%; text-align: center; }
+    .participanteTable tr > *:nth-child(5) { width:5%; text-align: center; }
+
+    .participanteTable {
+		.editGlyphicon {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.editGlyphicon:hover {
+			color: inherit;
+			text-decoration:none; 
+			cursor:pointer;  
+		}
+	}
+}
+
+.add-participante-content {
+	.row p {
+		font-size: 18px;
+	}
+
+	.div-buttons {
+		margin-top: 15px;
+
+		.btn {
+			font-size: 18px;
+			width: 150px;
+			height: 40px;
+		}
+	}
+
+	input:invalid {
+		background-color: #ffdddd;
+	}
+	input:valid {
+		background-color: #ddffdd;
+	}
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),
+       url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
