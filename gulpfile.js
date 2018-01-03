@@ -37,7 +37,7 @@ gulp.task('compress-prod', function() {
         'src/**/*.js',
     ])
         .pipe(concat('app.min.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('build'));
 });
 

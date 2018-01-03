@@ -3,6 +3,7 @@
   "description": "K121 Frontend Remoto Teste",
   "author": "Rodrigo Martins Sanches",
   "scripts": {
+    "build": "gulp build",
     "start": "node server.js",
     "test": "protractor tests/config.js"
   },
