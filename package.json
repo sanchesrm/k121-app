@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "@angular/cli": "^1.6.3",
+    "@angular/common": "^5.1.2",
+    "@angular/compiler": "^5.1.2",
     "@angular/core": "^5.1.2",
+    "@angular/forms": "^5.1.2",
+    "@angular/http": "^5.1.2",
+    "@angular/router": "^5.1.2",
     "angular": "^1.6.8",
     "angular-animate": "^1.5.8",
     "angular-ui-router": "^0.3.2",
