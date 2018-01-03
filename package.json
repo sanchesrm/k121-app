@@ -3,11 +3,12 @@
   "description": "K121 Frontend Remoto Teste",
   "author": "Rodrigo Martins Sanches",
   "scripts": {
-    "build": "gulp build",
+    "postinstall": "ng build --aot -prod",
     "start": "gulp build & node server.js",
     "test": "protractor tests/config.js"
   },
   "dependencies": {
+    "@angular/cli": "^1.6.3",
     "angular": "^1.6.8",
     "angular-animate": "^1.5.8",
     "angular-ui-router": "^0.3.2",
