@@ -14,8 +14,6 @@
 "@angular/core": "^4.0.0",
 "@angular/forms": "^4.0.0",
 "@angular/http": "^4.0.0",
-"@angular/platform-browser": "^4.0.0",
-"@angular/platform-browser-dynamic": "^4.0.0",
 "@angular/router": "^4.0.0",
     "angular": "^1.6.8",
     "angular-animate": "^1.5.8",
