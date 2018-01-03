@@ -4,8 +4,7 @@
   "author": "Rodrigo Martins Sanches",
   "scripts": {
     "build": "gulp build",
-    "postinstall": "ng build --aot -prod",
-    "start": "node server.js",
+    "start": "gulp build & node server.js",
     "test": "protractor tests/config.js"
   },
   "dependencies": {
