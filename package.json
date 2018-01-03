@@ -3,7 +3,8 @@
   "description": "K121 Frontend Remoto Teste",
   "author": "Rodrigo Martins Sanches",
   "scripts": {
-    "postinstall": "ng build --aot -prod",
+"preinstall": "npm install -g http-server",
+"postinstall": "ng build --prod",
     "start": "gulp build & node server.js",
     "test": "protractor tests/config.js"
   },
